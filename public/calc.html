@@ -3,13 +3,16 @@
   <title>Calculator Example</title>
 </head>
 <body>
+    <div>
+      <h1>Calculator Example</h1>
+    </div>
     <div>Result
         <span id="result"></span>
     </div>
     </body>
     <script>
-        let num1=2;
-        let num2=4;
+        let num1=12;
+        let num2=14;
         fetch(`http://localhost:3000/calculator/add?num1=${num1}&num2=${num2}`, { mode: 'no-cors'})
         .then(response => response.json())
         .then(data => {
